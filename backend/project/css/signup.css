@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url(../images/back.jpg);
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.form-container{
+    /* border: 2px solid red; */
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgb(197, 193, 193); 
+}
+.form-image{
+    background: transparent;
+    width: 50%;
+    /* margin-right: 5%; */
+}
+.form-image img{
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+    border-radius: 10px;
+    width: 70%;
+    height: 600px;
+    
+}
+.form{
+    margin-top: 10%;
+}
+.wlcm{
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.para{
+    text-transform: capitalize;
+    margin-bottom: 5%;
+    opacity: 0.5;
+}
+.input-fields{
+    margin-top: 3%;
+}
+.input-text{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    margin-bottom: 0.5%;
+}
+.input input{
+    border: none;
+    outline:none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.forgot{
+    margin-top: 3%;
+    text-align: end;
+    color:rgb(9, 157, 255);
+}
+.login-btn{
+   
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.login-btn button{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding: 2% 44%;
+    background-color: rgb(85, 214, 85);
+    border: 1px solid rgb(10, 185, 10);
+    border-radius: 5px;
+    outline: none;
+}
+.sign-up{
+    margin-top: 2%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+.sign-up a{
+    color: rgb(9, 157, 255);
+}

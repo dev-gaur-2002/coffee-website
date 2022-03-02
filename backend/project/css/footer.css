@@ -1,0 +1,38 @@
+footer{
+    background-color: #E4EDF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    text-align: center;
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.socials{
+    text-align: center;
+}
+.socials i{
+    transform: translateX(-10%);
+    font-size: 3.8rem;
+    margin-left: 10%;
+    cursor:pointer;
+}
+.links{
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.links a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 4%;
+    text-transform: capitalize;
+}
+.copyright{
+    text-align: center;
+    margin-left: 7%;
+}

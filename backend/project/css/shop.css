@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f0e1;
+}
+.head{
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 15%;
+    position: relative;
+}
+.flex-subpart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+.card{
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    width: 70vw;
+    position: relative;
+    display: flex;
+}
+.card img{
+    width:30%;
+    box-shadow: 5px 0px 10px rgb(218, 215, 215);
+}
+.card-txt{
+    margin-left: 4%;
+    margin-top: 2%;
+    font-size: 0.8rem;
+}
+.card-pricing{
+    font-size: 1rem;
+    margin-bottom: 2%;
+    font-weight: 500;
+}
+.heading{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.note{
+    margin-top: 4%;
+
+}
+.add-to-cart{
+    /* text-align: center; */
+    margin-top: 4%;
+    /* margin-right: 15%; */
+}
+.add-to-cart button{
+    margin-top: 2%;
+    padding: 2% 4%;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+}
+.genre-hero{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+}
+.genre-hero img{
+    margin-left: 2%;
+    width: 60%;
+}
+.side-text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30%;
+    margin-right: 5%;
+}
+.side-text-head{
+    font-size: 2rem;
+    /* text-transform: ; */
+    margin-bottom: 5%;
+}
+.side-text div:nth-child(2){
+    font-size: 0.85rem;
+    margin-bottom:4% ;
+}
+.side-text div:nth-child(3){
+    font-size: 0.8rem;
+    margin-bottom:1% ;
+}
+.not-visible{
+    display: none;
+    transition: 1s;
+}
+.btn-slider{
+    height: 100%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+#left-btn{
+    margin-top: 700%;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    margin-right: 10%;
+}
+.slide-button{
+    margin-top: 700%;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    margin-left: 5%;
+}
+@keyframes fade{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity:100%;
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:#1e3d59;
+    font-family: 'Raleway', sans-serif;
+    /* color: #ff6e40; */
+}
+.quote{
+    font-family: 'Prompt', sans-serif;
+    margin-top: 15%;
+    margin-left: 4%;
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.container{
+    background-color: #f5f0e1;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form{
+    margin-top: 15%;
+    width: 30%;
+    margin-right: 3%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.head-form{
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 8%;
+}
+
+.label{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    /* margin-bottom: 1%; */
+}
+.input{
+    margin-bottom: 5%;
+}
+.input input{
+    font-size: 1.1rem;
+    width: 90%;
+    border:none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+.btn-form{
+    margin-left:21%;
+}
+#submit-btn{
+    margin-top: 7%;
+    padding: 3% 20%;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    background-color: #ff6e40;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

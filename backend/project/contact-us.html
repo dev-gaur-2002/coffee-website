@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/contact-us.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="mid">
+            <a href="/" style="text-decoration: none; color:white;">
+                <span>
+                    CEREMONY
+                </span>
+                <span>
+                    coffee roasters
+                </span>
+            </a>
+        </div>
+        <div class="left">
+            <ul>
+                <a href="/about">
+                    <li>Why us</li>
+                </a>
+                <a href="/shop">
+                    <li>shop</li>
+                </a>
+                <a href="/location">
+                    <li>locations</li>
+                </a>
+                <a href="/menu">
+                    <li>menu</li>
+                </a>
+            </ul>
+        </div>
+        
+        <div class="right">
+            <ul>
+               <a href="/contact">
+                   <li>contact us</li>
+               </a>
+                <a href="/cart">
+                    <li>cart</li>
+                </a>
+                <a href="/login" style="margin-right: 2%;"><button class="btn">login</button></a>
+                <a href="/sign"><button class="btn">sign Up</button></a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="quote">
+            <div>a bad day with</div> <div>a coffeee is better</div> <div>than a good day</div> <div>without it <span style="font-size: 2rem;"><i class="fas fa-coffee"></i> <i class="fas fa-coffee"></i></span></div> 
+        </div>
+        <div class="form">
+            <form action="https://formspree.io/f/mpzbppjn" method="POST" id="my-form">
+                <div class="head-form">
+                    contact us
+                </div>
+                <div class="form-elements">
+                    <div class="label">
+                        name
+                    </div>
+                    <div class="input">
+                        <input type="text" name="firstName">
+                    </div>
+                </div>
+                <div class="form-elements">
+                    <div class="label">
+                        email
+                    </div>
+                    <div class="input">
+                        <input type="enail" name="mail">
+                    </div>
+                </div>
+                <div class="form-elements">
+                    <div class="label">
+                        mobile number
+                    </div>
+                    <div class="input">
+                        <input type="text" name="mob">
+                    </div>
+                </div>
+                <div class="form-elements">
+                    <div class="label">
+                        message
+                    </div>
+                    <div class="input">
+                        <input type="text" name="msg" required>
+                    </div>
+                </div>
+                <div class="btn-form">
+                    <button id="submit-btn">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="socials">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="links">
+                <a href="/about">
+                    about us
+                </a>
+                <a href="/contact" id="mid-a">
+                    contact us
+                </a>
+                <a href="/privacy">
+                    privacy policy
+                </a>
+            </div>
+            <div class="copyright">
+                <i class="far fa-copyright"></i> 2020 Ceremony Coffee
+            </div>
+        </div>
+    </footer>
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+                alert('feedback send successfully')
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+</body>
+</html>

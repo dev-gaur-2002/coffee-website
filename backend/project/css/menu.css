@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: aqua; */
+    background-color: #f5f0e1;
+}
+.menu{
+    margin: 0 10%;
+    margin-top: 10%;
+}
+.title{
+    font-family: 'Allura', cursive;
+    font-weight: 570;
+    font-size: 4rem;
+    text-transform: capitalize;
+    /* text-align: center; */
+    margin-bottom: 3%;
+}
+.items{
+    display: flex;
+    margin-bottom: 7%;
+}
+.image img{
+    width: 80%;
+    box-shadow: 10px -8px 10px 0px rgb(190, 186, 186);
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: flex;
+    margin-bottom: 2%;
+}
+.name{
+    font-family: 'Allura', cursive;
+    color: rgb(255, 136, 0);
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    width: 60%;
+    position: relative;
+}
+.name::before{
+    content: '...........';
+    position: absolute;
+    top: 1%;
+    right:-20%;
+}
+.description{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    color: rgb(92, 89, 89);
+    font-size: 0.6rem;
+    font-family: sans-serif;
+}
+.price{
+    color: rgb(255, 136, 0);
+    margin-left: 20%;
+    transform: translateY(20%);
+}
+#image-2-div{
+    width: 60%;
+}
+#image-4-div{
+    width: 50%;
+    margin-right: 10%;
+}
+hr{
+    background-color: rgb(230, 182, 93);
+    border: 0.5px solid orange;
+    margin-bottom: 2%;  
+}

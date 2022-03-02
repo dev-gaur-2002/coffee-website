@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.start{
+    background-image: url('../images/ceremony-coffee-roasters-home-education-1600x791\ \(1\).jpg');
+    height: 100vh;
+    object-fit: fill;
+    position: relative;
+}
+.content{
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+#first{
+    font-size: 1.15rem;
+}
+#second{
+    font-size: 2.7rem;
+    margin-bottom: 10%;
+    text-transform: capitalize;
+}
+#third{
+    font-size: 0.9rem;
+    margin-bottom: 5%;
+}
+#fourth{
+    font-size: 1.15rem;
+    font-weight: 560;
+    text-transform: uppercase;
+}
+.new-arrivals{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+.coupons{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-right: 4%;
+}
+.coupon{
+    position: relative;
+    margin-left: 3%;
+    cursor: pointer;
+}
+.coupon img{
+    width: 100%;
+    height: 90%;
+    /* animation: transp 1s; */
+}
+.coupon-text{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    opacity: 0;
+}
+.coupon-text span{
+    margin-bottom: 1%;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#head{
+    font-size: 1.1rem;
+    font-size: 440;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+#high{
+    font-size: 2rem;
+    font-weight: 530;
+    margin-bottom: 3%;
+}
+#para{
+    font-size: 1rem;
+    margin-bottom: 6%;
+}
+#link{
+    text-transform: uppercase;
+}
+footer{
+    background-color: #E4EDF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    text-align: center;
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.socials{
+    text-align: center;
+}
+.socials i{
+    transform: translateX(-10%);
+    font-size: 2rem;
+    margin-left: 10%;
+    cursor:pointer;
+}
+.links{
+    text-align: center;
+    margin-left: 7%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.links a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 4%;
+    text-transform: capitalize;
+}
+.copyright{
+    text-align: center;
+    margin-left: 7%;
+}
+.animate-img{
+   opacity: 50%;
+   transition: 1s;
+}
+.animate-txt{
+    opacity: 100%;
+    top: 15%;
+    font-weight: 600;
+    transition: 1s;
+}
